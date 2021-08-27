@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="jquery/jquery-ui.css" rel="stylesheet">
+    <script src="jquery/external/jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="head">
+                <img class="main-icon" src="img/icons/mainIco.png" alt="World Bank">
+                <div class="phone-number">
+                    8-800-100-5005<br>
+                    +7 (3452) 522-000</div>
+
+            </div>
+        </header>
+        <nav>
+            <div>
+                <ul class="wrapper-menu">
+                    <li class="menu-item no-border-left">Кредитные карты</li>
+                    <li class="menu-item choosed-mune-item">Вклады</li>
+                    <li class="menu-item">Дебетовая карта</li>
+                    <li class="menu-item">Страхование</li>
+                    <li class="menu-item">Друзья</li>
+                    <li class="menu-item no-border-right">Интеренет-банк</li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="breadcrumbs">
+            <li><a href="">Главная</a></li>
+            <li><a href="">Вклады</a></li>
+            <li><a href="">Калькулятор</a></li>
+        </ul>
+        <section>
+            <div class="calc-wrapper">
+                <h1 class="title">Калькулятор</h1>
+                <form id="form">
+                    <div class="form-item">
+                        <label name="date" class="calc-text">Дата оформления вклада</label>
+                        <input autocomplete="off" id="datepicker" name="date" class="input-item" type="text" placeholder="дд.мм.гггг">
+                    </div>
+                    <div class="form-item">
+                        <label name="sum-dep" class="calc-text">Сумма вклада</label>
+                        <input name="sum-dep" id="input-ammount-dep" class="input-item" type="number" placeholder="10000" max="3000000" min="1000">
+                        <div id="ammount-dep">
+                            <div class="current-slider">
+                                <span>1000 тыс. руб</span>
+                                <span>3000000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label name="term-dep" class="calc-text">Срок вклада</label>
+                        <select name="term-dep" class="input-item">
+                            <option value="1">1 год</option>
+                            <option value="2">2 года</option>
+                            <option value="3">3 года</option>
+                            <option value="4">4 года</option>
+                            <option value="5">5 лет</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label name="radio" class="calc-text">Пополнение вклада</label>
+                        <input style="margin-left: 27px;" type="radio" name="radio" value="no" checked> <span>Нет</span>
+                        <input style="margin-left: 20px;" type="radio" name="radio" value="yes"> <span>Да</span>
+                    </div>
+                    <div class="form-item">
+                        <label name="added-dep" class="calc-text">Сумма пополнения вклада</label>
+                        <input name="added-dep" id="input-added-dep" class="input-item" type="number" placeholder="10000" max="3000000" min="1000">
+                        <div id="added-dep">
+                            <div class="current-slider">
+                                <span>1000 тыс. руб</span>
+                                <span>3000000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="submit submit-text" type="submit" value="Рассчитать">
+                        <span class="submit-text" style="margin-left: 24px;">Результат:</span>
+                        <span id="result">0 руб</span>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-fix">
+                <ul class="wrapper-footer">
+                    <li><a href="">Кредитные карты</a></li>
+                    <li><a href="">Вклады</a></li>
+                    <li><a href="">Дебетовая карта</a></li>
+                    <li><a href="">Страхование</a></li>
+                    <li><a href="">Друзья</a></li>
+                    <li><a href="">Интеренет-банк</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+<script src="/script.js"></script>
+</body>
+</html>
