@@ -3,7 +3,7 @@
 $numberMouns = date('n', strtotime($_POST['date']));
 $dateFor = date('Y-m-d', strtotime($_POST['date']));
 $summn = $_POST['sum-dep'];
-$percent = 0.1;
+$percent = 10;
 $summadd = $_POST['added-dep'];
 $years = $_POST['term-dep'];
 $radio = $_POST['radio'];
@@ -24,7 +24,7 @@ for ($i = $numberMouns; $i < $currentMouns; $i++) {
         $summadd = 0;
     }
 
-    $summn = $summn + ($summn + $summadd)*date('t', strtotime($date1))*($percent/$daysPerYear);
+    $summn = $summn + ($summn + $summadd)*date('t', strtotime($date1))*($percent/($daysPerYear * 100));
 
     date_modify($date, '1 month');
 

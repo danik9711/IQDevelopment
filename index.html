@@ -44,11 +44,11 @@
                 <form id="form">
                     <div class="form-item">
                         <label name="date" class="calc-text">Дата оформления вклада</label>
-                        <input autocomplete="off" id="datepicker" name="date" class="input-item" type="text" placeholder="дд.мм.гггг">
+                        <input pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}" required autocomplete="off" id="datepicker" name="date" class="input-item" type="text" placeholder="дд.мм.гггг">
                     </div>
                     <div class="form-item">
                         <label name="sum-dep" class="calc-text">Сумма вклада</label>
-                        <input name="sum-dep" id="input-ammount-dep" class="input-item" type="number" placeholder="10000" max="3000000" min="1000">
+                        <input required name="sum-dep" id="input-ammount-dep" class="input-item" type="number" placeholder="10000" max="3000000" min="1000">
                         <div id="ammount-dep">
                             <div class="current-slider">
                                 <span>1000 тыс. руб</span>
